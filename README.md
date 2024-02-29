@@ -8,7 +8,7 @@ This repository contains the official implementation of Proto-BagNets from the p
 All packages required for running the code in the repository are listed in the file _requirements.txt_
 
 ## Data
-`Dataset`: The code in this repository uses publicly available Kaggle dataset for the [OCT retinal dataset](https://data.mendeley.com/datasets/rscbjbr9sj/3).
+`Dataset`: The code in this repository uses publicly available dataset for the [OCT retinal dataset](https://data.mendeley.com/datasets/rscbjbr9sj/3).
 
 From this dataset, we used a subset containing all the Drusen images and half of the healthy images. The resulting dataset (CSV files) used for training, evaluation, and testing of the model is given: 
 - [`test csv file`](./files/csv_files/test_normal_drusen.csv) 
