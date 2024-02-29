@@ -4,10 +4,10 @@ base:
   random_seed: 0
 
 paths:
-  root: "/gpfs01/berens/data/data/kermani_oct/CellData" # main_folder
-  dset_dir: "OCT_preprocessed_resized_3_channels_496"
+  root: "main_folder" # main_folder
+  dset_dir: "OCT_datset"
   save: 'Outputs'
-  model_dir: "ProtoPNet" # ProtoBagNet
+  model_dir: "ProtoBagNet" # ProtoBagNet
   model_save_path: null
   train_csv: 'train_normal_drusen.csv' 
   val_csv: 'val_normal_drusen.csv' 
@@ -31,12 +31,12 @@ data:
     - translation
 
 train:
-  base_architecture: 'resnet50' # ['bagnet33', 'resnet50']
+  base_architecture: 'bagnet33' # ['bagnet33', 'resnet50']
   epochs: 201
   train_last_layer_epoch: 10 # 20
   warm_epochs: 10 # set to 0 to disable warmup
-  push_start: 10 # from 0 to 9 = 10 epochs
-  batch_size: 16 # 16, 8, 32 for OCT
+  push_start: 10 
+  batch_size: 16 #
   num_workers: 24 # 24
   criterion: cross_entropy
   pretrained: True  ## always
@@ -47,8 +47,8 @@ train:
   random_SA_init: False
   fan_out_sa_init: False
   reg_fcl: True # False or True (value is solver.l1)
-  reg_proto: -0.005 #-0.005 # 0.5, 0.05, 0.005, False => enforce the dissimilarity between proto
-  reg: 0.04 #0.04  # 0.05 ~ reg similarity map
+  reg_proto: -0.005 # [False, value] => enforce the dissimilarity between proto
+  reg: 0.04 
   reg_epoch: False # False, 51
 
 prototype:
@@ -99,7 +99,7 @@ scheduler_args:
     eps: 0.00001 # minimal decay applied to learning rate
   clipped_cosine:
     T_max: 50
-    min_lr: 0.0001 #
+    min_lr: 0.0001 
   
 oct_data_augmentation_args:
   horizontal_flip:

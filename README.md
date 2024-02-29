@@ -5,7 +5,7 @@ This repository contains the official implementation of Proto-BagNets from the p
 ![Model's architecture](./files/fig1_model_architecture.jpg)
 
 ## Dependencies
-All packages required for running the code in the repository are listed in the file _requirements.txt_
+All packages required for running the code in the repository are listed in the file `requirements.txt`
 
 ## Data
 `Dataset`: The code in this repository uses publicly available datasets downloadable here: [OCT Retinal Dataset](https://data.mendeley.com/datasets/rscbjbr9sj/3).
