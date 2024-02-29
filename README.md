@@ -73,12 +73,14 @@ $ python main.py
 ### 4. Monitor the training progress 
 Monitor the training progress in website [127.0.0.1:6006](127.0.0.1:6006) by running:
 
-```$ tensorborad --logdir=/path/to/your/log --port=6006```
+```
+$ tensorborad --logdir=/path/to/your/log --port=6006
+```
 
 ## Reproducibility
 ### Figures and annotations
 - Code for figures 2, 3, and 4 may be available upon request
-- Annotation (masks) may also be available upon request
+- Annotations masks on selected test images (_test_drusen_annotation.csv_) may also be available upon request
 
 ### Models's weights
 The final models with the best validation weights used for all the experiments are as follows:
