@@ -1,5 +1,5 @@
 # This really looks like that: Proto-BagNets for local and global glass-box interpretability
-This repository contains the official implementation of Proto-BagNets from the paper ["This really looks like that: Proto-BagNets for local and global glass-box interpretability"](https://conferences.miccai.org/2024/en/) (submitted at MICCAI 2024) by ....
+This repository contains the official implementation of Proto-BagNets from the paper ["This really looks like that: Proto-BagNets for local and global glass-box interpretability"](http://arxiv.org/abs/2406.15168) (submitted at MICCAI 2024) by ....
 
 ## Model's architecture
 ![Model's architecture](./files/fig1_model_architecture.jpg)
@@ -100,7 +100,7 @@ We used code from the [interpretable-sparse-activation](https://github.com/kdjou
 ```
   @inproceedings{kerol2024protobagnet,
   title={This really looks like that: Proto-BagNets for local and global glass-box interpretability},
-  author={Kerol, Djoumessi and K{\"u}hlewein, Laura and Bah, Bubacarr and Berens, Philipp and Koch, Lisa M},
+  author={Kerol, Djoumessi and Bah, Bubacarr and K{\"u}hlewein, Laura and Berens, Philipp and Koch, Lisa M},
   booktitle={International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)},
   year={2024}
 }
