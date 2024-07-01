@@ -97,4 +97,11 @@ We used code from the [interpretable-sparse-activation](https://github.com/kdjou
 - We greatly thanks the reviews of MICCAI 2024 for improving this work.
 
 ## Reference
-anonymous. Proto-BagNets for local and global glass-box interpretability. Submitted In Medical Image Computing and Computer Assisted Intervention--MICCAI 2024
+```
+  @inproceedings{kerol2024protobagnet,
+  title={This really looks like that: Proto-BagNets for local and global glass-box interpretability},
+  author={Kerol, Djoumessi and K{\"u}hlewein, Laura and Bah, Bubacarr and Berens, Philipp and Koch, Lisa M},
+  booktitle={International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)},
+  year={2024}
+}
+```

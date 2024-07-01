@@ -86,7 +86,7 @@ def main():
         paths = model_dir,
         estimator=estimators,
         logs=(log, logclose, logger),
-        debug= debug or test
+        debug= False
     )
 
     name = 'fcl_best_val_weights'
